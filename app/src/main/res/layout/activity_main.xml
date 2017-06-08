@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="push.jiyun.asus.test.MainActivity">
+
+    <TextView
+        android:id="@+id/top_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ff44aacc"
+        android:gravity="center"
+        android:text="height:20,width:70"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="70%">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="30%"
+        android:background="#f0f"
+        />
+    <Button
+        android:text="点击"
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</android.support.percent.PercentRelativeLayout>
